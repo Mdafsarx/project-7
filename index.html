@@ -7,6 +7,21 @@
     <title>project-7</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e30045d648.js" crossorigin="anonymous"></script>
+<style>
+  .gradient{
+    background:linear-gradient(180deg, #121212 -14.42%, rgba(18, 18, 18, 0.00) 100%);
+  }
+  .gradient2{
+    background: rgba(18, 18, 18, 0.70);
+  }
+  body{
+    font-family: 'Lato', sans-serif;
+  }
+</style>
 </head>
 <body>
     
@@ -38,10 +53,16 @@
     <section>
 
         <div class="carousel w-full">
-            <div id="slide1" class="carousel-item relative w-full h-[40vh]">
-<div class="bg-[url(./Images/banner1.png)] w-full  bg-cover bg-no-repeat bg-center">
+            <div id="slide1" class="carousel-item relative w-full max-h-[60vh]">
+<div class="bg-[url(./Images/banner1.png)] w-full  bg-cover bg-no-repeat bg-center ">
 
-
+  <div class="text-white text-center flex items-center justify-center h-full gradient">
+   <div class="space-y-5">
+    <h2 class="text-6xl font-bold">Exotic tastes at your <br> doorstep</h2>
+    <p class="text-base font-medium">We supply highly quality organic products</p>
+    <button class="bg-[#F85559] btn border-0 text-white">Shop Now</button>
+   </div>
+  </div>
 
 </div>
 
@@ -51,22 +72,52 @@
               </div>
             </div> 
 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+            <div id="slide2" class="carousel-item relative w-full max-h-[60vh]">
+              <div class="bg-[url(./Images/banner2.png)] w-full  bg-cover bg-no-repeat bg-center ">
+
+                <div class="text-white text-center flex items-center justify-center h-full py-[20%] gradient ">
+                 <div class="space-y-5">
+                  <h2 class="text-6xl font-bold">Exotic tastes at your <br> doorstep</h2>
+                  <p class="text-base font-medium">We supply highly quality organic products</p>
+                  <button class="bg-[#F85559] btn border-0 text-white">Shop Now</button>
+                 </div>
+                </div>
+              
+              </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a> 
                 <a href="#slide3" class="btn btn-circle">❯</a>
               </div>
             </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+            <div id="slide3" class="carousel-item relative w-full max-h-[60vh]">
+              <div class="bg-[url(./Images/banner3.png)] w-full  bg-cover bg-no-repeat bg-center gradient">
+
+                <div class="text-white text-center flex items-center justify-center h-full py-[20%] gradient">
+                 <div class="space-y-5">
+                  <h2 class="text-6xl font-bold">Exotic tastes at your <br> doorstep</h2>
+                  <p class="text-base font-medium">We supply highly quality organic products</p>
+                  <button class="bg-[#F85559] btn border-0 text-white">Shop Now</button>
+                 </div>
+                </div>
+              
+              </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a> 
                 <a href="#slide4" class="btn btn-circle">❯</a>
               </div>
             </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+            <div id="slide4" class="carousel-item relative w-full max-h-[60vh]">
+              <div class="bg-[url(./Images/banner4.png)] w-full  bg-cover bg-no-repeat bg-center">
+
+                <div class="text-white text-center flex items-center justify-center h-full py-[20%] gradient">
+                 <div class="space-y-5">
+                  <h2 class="text-6xl font-bold">Exotic tastes at your <br> doorstep</h2>
+                  <p class="text-base font-medium">We supply highly quality organic products</p>
+                  <button class="bg-[#F85559] btn border-0 text-white">Shop Now</button>
+                 </div>
+                </div>
+              
+              </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" class="btn btn-circle">❮</a> 
                 <a href="#slide1" class="btn btn-circle">❯</a>
@@ -75,15 +126,257 @@
           </div>
 
     </section>
+<!-- five image -->
+<div class="flex items-center justify-center gap-4 bg-[#fff] drop-shadow-2xl py-3 space-x-10 max-w-[80%] mx-auto -mt-20 hidden lg:flex">
+  <figure class=""><img src="./images/fruit1.png" alt="">
+    <p class="text-lg font-medium text-center text-gray-500">Strawberry</p>
+  </figure>
+  <figure><img src="./images/fruit2.png" alt="">
+    <p class="text-lg font-medium text-center text-gray-500">Orange</p>
+  </figure>
+  <figure><img src="./images/fruit3.png" alt="">
+    <p class="text-lg font-medium text-center text-gray-500">Mango</p>
+  </figure>
+  <figure><img src="./images/fruit4.png" alt="">
+    <p class="text-lg font-medium text-center text-gray-500">Strawberry</p>
+  </figure>
+  <figure><img src="./images/fruit5.png" alt="">
+    <p class="text-lg font-medium text-center text-gray-500">Mango</p>
+  </figure>
+</div>
 
 </header>
 
 
-<main></main>
+
+
+<main class="container mx-auto">
+<!-- deal of the day content -->
+<div class="flex  flex-col lg:flex-row my-20 items-center justify-center space-y-10">
+
+  <div class="text-center lg:text-start ">
+    <h2 class="text-4xl font-extrabold">Deal of the day</h2>
+    <p class="text-base font-medium  lg:max-w-[55%]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+
+  <!-- count down -->
+  <div class="">
+
+    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+      <div class="flex flex-col">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:15;"></span>
+        </span>
+        days
+      </div> 
+      <div class="flex flex-col">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:10;"></span>
+        </span>
+        hours
+      </div> 
+      <div class="flex flex-col">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:24;"></span>
+        </span>
+        min
+      </div> 
+      <div class="flex flex-col">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:46;"></span>
+        </span>
+        sec
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end -->
+
+<!-- deal and discount card -->
+<section class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+  <div class="space-y-3 flex flex-col items-center justify-center border border-gray-400 py-5 rounded-xl">
+
+<figure><img src="./images/fruit6.png" alt=""></figure>
+<p class="text-xl font-bold  border-b border-black pb-5">12.90$ - 18.85$</p>
+<p class="text-base font-medium ">Apples</p>
+<figure><img src="Group 24.png" alt=""></figure>
+<p class="text-base font-medium text-[#F85559]">Details</p>
+
+
+  </div>
+  <div class="space-y-3 flex flex-col items-center justify-center border border-gray-400 py-5 rounded-xl">
+
+<figure><img src="./images/fruit7.png" alt=""></figure>
+<p class="text-xl font-bold  border-b border-black pb-5">12.90$ - 18.85$</p>
+<p class="text-base font-medium ">Orange</p>
+<figure><img src="Group 24.png" alt=""></figure>
+<p class="text-base font-medium text-[#F85559]">Details</p>
+
+
+  </div>
+  <div class="space-y-3 flex flex-col items-center justify-center border border-gray-400 py-5 rounded-xl">
+
+<figure><img src="./images/fruit8.png" alt=""></figure>
+<p class="text-xl font-bold  border-b border-black pb-5">12.90$ - 18.85$</p>
+<p class="text-base font-medium ">Red Dragon</p>
+<figure><img src="Group 24.png" alt=""></figure>
+<p class="text-base font-medium text-[#F85559]">Details</p>
+
+
+  </div>
+  <div class="space-y-3 flex flex-col items-center justify-center border border-gray-400 py-5 rounded-xl">
+
+<figure><img src="./images/fruit9.png" alt=""></figure>
+<p class="text-xl font-bold  border-b border-black pb-5">12.90$ - 18.85$</p>
+<p class="text-base font-medium ">Banana</p>
+<figure><img src="Group 24.png" alt=""></figure>
+<p class="text-base font-medium text-[#F85559]">Details</p>
+
+
+  </div>
+
+
+
+</section>
+<!-- deal and discount card end -->
+
+<!-- show all -->
+<div class="flex justify-center my-24"><button class="btn bg-red-500 text-white">Shop All</button></div>
+<!-- show all button end -->
+
+<!-- meet the team section -->
+<section class="bg-[url(./images/banner4.png)] bg-cover bg-center h-full bg-no-repeat">
+
+ <div class="gradient2 h-full lg:h-[65vh] flex items-center justify-center ">
+
+  <div class="max-w-[80%] mx-auto text-center space-y-5">
+
+    <div class="text-white h-1/2   ">
+      <div class="">
+        <h2 class="text-4xl font-extrabold">Meet the team section</h2>
+      <p class="max-w-[55%] mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+    </div>
+
+    <div class=" grid grid-cols-1 lg:grid-cols-4 text-white space-y-10 h-1/2">
+
+      <div class="flex flex-col justify-center items-center space-y-2">
+        <figure><img src="./images/member1.png" alt=""></figure>
+        <h2 class="text-xl font-bold">Awlad Hossain</h2>
+        <p class="text-base font-medium">Fruits Expert</p>
+        <div class="text-[#F85559] ">
+          <a href="" ><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-center space-y-2">
+        <figure><img src="./images/member2.png" alt=""></figure>
+        <h2 class="text-xl font-bold">Safia Chowdhury</h2>
+        <p class="text-base font-medium">Fruits Expert</p>
+        <div class="text-[#F85559] ">
+          <a href="" ><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-center space-y-2">
+        <figure><img src="./images/member3.png" alt=""></figure>
+        <h2 class="text-xl font-bold">Rokib Hossain</h2>
+        <p class="text-base font-medium">Fruits Expert</p>
+        <div class="text-[#F85559] ">
+          <a href="" ><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center items-center space-y-2">
+        <figure><img src="./images/member4.png" alt=""></figure>
+        <h2 class="text-xl font-bold">Chaity</h2>
+        <p class="text-base font-medium">Fruits Expert</p>
+        <div class="text-[#F85559] ">
+          <a href="" ><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+
+    </div>
+    
+     </div> 
+
+ </div>
+
+
+
+
+</section>
+<!-- meet the team section end -->
+
+<!-- Why Choose Us content -->
+
+<div class="max-w-[45%] text-center mx-auto my-20 ">
+<h2 class="text-4xl font-extrabold">Why Choose Us</h2>
+<p class="text-base font-medium text-[#6D6D6D]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+</div>
+
+<!-- why chose us section -->
+<section class="flex flex-col lg:flex-row ">
+
+
+<!-- part 1 -->
+<div class="lg:max-w-[67%] flex flex-col-reverse lg:flex-row justify-between gap-14">
+  <!-- content -->
+  <div class="  lg:max-w-[50%] space-y-8">
+
+<div class="flex flex-col items-center  lg:items-start text-center lg:text-left lg:flex-row gap-3">
+  <div class="lg:bg-[#E7E7E7] pt-2 lg:px-2 h-10 rounded-full mt-2 "><img src="group 1 (2).png"  class=" w-[35px]" alt=""></div>
+  <div class="space-y-7">
+<h2 class="text-xl font-extrabold "><span class="lg:border-b-2 lg:border-black pb-4 ">Dedicated</span> Team</h2>
+<p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  </div>
+</div>
+<div class="flex flex-col items-center  lg:items-start text-center lg:text-left lg:flex-row gap-3">
+  <div class="lg:bg-[#E7E7E7] pt-2 lg:px-2 h-10 rounded-full mt-2 "><img src="love 1.png"  class=" w-[35px]" alt=""></div>
+  <div class="space-y-7">
+<h2 class="text-xl font-extrabold "><span class="lg:border-b-2 lg:border-black pb-4 ">Fresh is</span> best</h2>
+<p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  </div>
+</div>
+<div class="flex flex-col items-center  lg:items-start text-center lg:text-left lg:flex-row gap-3">
+  <div class="lg:bg-[#E7E7E7] pt-2 lg:px-2 h-10 rounded-full mt-2 "><img src="gift-box 1.png"  class=" w-[35px]" alt=""></div>
+  <div class="space-y-7">
+<h2 class="text-xl font-extrabold "><span class="lg:border-b-2 lg:border-black pb-4 ">Gift Cer</span>tificates</h2>
+<p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  </div>
+</div>
+
+  </div>
+
+<!-- img -->
+  <div class="w-full  lg:max-w-[50%]  lg:h-10">
+<img src="./images/whychoose1.png" alt="" class="">
+  </div>
+
+</div>
+
+
+
+<div class="max-w-[33%]">
+
+
+
+</div>
+
+</section>
+
+</main>
 
 
 <footer></footer>
-
 
 </body>
 </html>
